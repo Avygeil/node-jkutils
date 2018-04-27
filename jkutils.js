@@ -207,8 +207,8 @@ jkutils.createSocket = function( callback ) {
 	server.on(
 		'listening',
 		() => {
-			let address = server.address();
-			console.log( `listening on ${address.address}:${address.port} (UDP)` );
+			/*let address = server.address();
+			console.log( `listening on ${address.address}:${address.port} (UDP)` );*/
 			//FIXME: should we callback from here instead?
 		}
 	);
