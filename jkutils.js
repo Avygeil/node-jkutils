@@ -54,7 +54,7 @@ jkutils.parseInfostring = function( info ) {
 	// this accounts for invalid key/value pairs
 	let pairs = {};
 	for ( let i = 0; i < toks.length - 1; i += 2 ) {
-		pairs[toks[i]] = toks[i + 1];
+		pairs[toks[i].toLowerCase()] = toks[i + 1];
 	}
 	return pairs;
 }
